@@ -12,11 +12,12 @@ const ListElements = ({data,removeElement}:ListSectionProps) => {
            <ul style={{listStyle:"none"}}>
                {data.map((data,idx)=>(
                  <div className="flex gap-3 my-2"
+                    key={idx}
                     style={{alignItems:"center"}}
                  >
                    <li 
                    className='border-b flex items-center justify-between'
-                   key={idx}>{data}</li>
+                   >{data}</li>
                    <button 
                    onClick={()=>removeElement(idx)}
                    className="bg-rose-800 text-white font-bold w-1/6 p-2 rounded" >Remove</button>
