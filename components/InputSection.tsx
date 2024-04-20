@@ -15,9 +15,7 @@ const InputSection = ({title,setData,data,placeholder,companies,positions}:Input
 
   const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
     const {value}=e.target
-    if(value){
       setValue(value)
-    }
   }
   const handleAddClick=(e:React.MouseEvent<HTMLButtonElement>)=>{
     e.preventDefault()
