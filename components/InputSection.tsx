@@ -23,6 +23,7 @@ const InputSection = ({title,setData,data,placeholder,companies,positions}:Input
     e.preventDefault()
     if(inputValue.trim()!==""){
       setData(prevData=>[...prevData,inputValue])
+      setValue("")
     }
   }
 
